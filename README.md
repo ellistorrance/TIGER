@@ -223,6 +223,15 @@ cd <path to out directory containing singular .fa file> ; tiger.pl -verbose -db 
 
 To rerun this program, delete 'genome.island.nonoverlap.gff'
 
+Finally, run resolve:
+```bash
+conda activate Tiger
+```
+
+```bash
+cd <path to out directory containing singular .fa file> ; resolve3.pl mode[tiger/islander/mixed] logic[strict/lenient] prefix[this is genome] TIGER_file ISLANDER_file &> resolve.log; typing.pl resolve3.gff &> typing.log
+```
+
 ## Contact
 Please leave an issue on this GitHub repo or reach out to Kelly Williams (kpwilli at sandia dot gov) or Katie Mageeney (cmmagee at sandia dot gov) for questions or assistance.
 
